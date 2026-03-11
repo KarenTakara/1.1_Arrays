@@ -25,5 +25,14 @@ public class MonitorEnergia {
         return media / consumo.length;
     }
 
+    public double calcularMedia(int inicio, int fim) {
+        double media = 0;
+        for (int i = inicio; i <= fim; i++){
+        media += consumo[i];
+
+        }
+        return media / (fim - inicio);
+    }
+
 
 }
